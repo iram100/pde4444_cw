@@ -2,7 +2,6 @@ import cv2
 from predict import predict
 import os
 
-# ---- CHANGE THIS TO YOUR IMAGE ----
 IMAGE_PATH = "test_images/fail2.jpg"
 
 
