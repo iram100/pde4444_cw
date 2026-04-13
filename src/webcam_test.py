@@ -16,7 +16,7 @@ while True:
 
     h, w, _ = frame.shape
 
-    # ---- CENTER BOX (slightly bigger but not restrictive) ----
+    # ---- CENTER BOX  ----
     x1, y1 = int(w * 0.25), int(h * 0.25)
     x2, y2 = int(w * 0.75), int(h * 0.75)
 

@@ -4,7 +4,7 @@ import torch.nn.functional as F
 import cv2
 import numpy as np
 
-# ---- EXACT MODEL (MATCH TRAINING) ----
+
 class BottleCNN(nn.Module):
     def __init__(self):
         super(BottleCNN, self).__init__()
@@ -18,16 +18,16 @@ class BottleCNN(nn.Module):
             nn.ReLU(),
             nn.MaxPool2d(2),
 
-            nn.Conv2d(32, 64, 3, padding=1),  # ✅ IMPORTANT
+            nn.Conv2d(32, 64, 3, padding=1),  
             nn.ReLU(),
             nn.MaxPool2d(2)
         )
 
         self.fc = nn.Sequential(
             nn.Flatten(),
-            nn.Linear(64 * 28 * 28, 128),  # ✅ IMPORTANT
+            nn.Linear(64 * 28 * 28, 128),  
             nn.ReLU(),
-            nn.Dropout(0.5),               # ✅ IMPORTANT
+            nn.Dropout(0.5),               
             nn.Linear(128, 2)
         )
 

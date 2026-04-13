@@ -9,7 +9,7 @@ IMAGE_PATH = "test_images/fail2.jpg"
 img = cv2.imread(IMAGE_PATH)
 
 if img is None:
-    print("❌ Error: Image not found")
+    print(" Error: Image not found")
     exit()
 
 # ---- PREDICT ----
