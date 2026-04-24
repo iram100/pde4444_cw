@@ -4,6 +4,9 @@
 
 This project presents a complete machine learning pipeline for **binary image classification**, comparing classical machine learning models with deep learning approaches.
 
+Check out my project here:  
+[My GitHub Repo](https://github.com/iram100/pde4444_cw)
+
 The goal is to classify images into:
 
 *  **PASS** — Acceptable,  Upright Bottles
